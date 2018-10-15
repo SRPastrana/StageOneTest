@@ -1,0 +1,29 @@
+18:29:42 **** Build of configuration Debug for project StageOne ****
+make all 
+Building file: ../src/StageOne.c
+Invoking: GCC C Compiler
+gcc -m32 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/StageOne.d" -MT"src/StageOne.d" -o "src/StageOne.o" "../src/StageOne.c"
+../src/StageOne.c: In function ‘main’:
+../src/StageOne.c:120:3: warning: implicit declaration of function ‘f0700_refactor’ [-Wimplicit-function-declaration]
+   result = f0700_refactor(a1, a2, a3, a4);
+   ^
+Finished building: ../src/StageOne.c
+ 
+Building file: ../src/f0700.c
+Invoking: GCC C Compiler
+gcc -m32 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/f0700.d" -MT"src/f0700.d" -o "src/f0700.o" "../src/f0700.c"
+Finished building: ../src/f0700.c
+ 
+Building file: ../src/utils.c
+Invoking: GCC C Compiler
+gcc -m32 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utils.d" -MT"src/utils.d" -o "src/utils.o" "../src/utils.c"
+Finished building: ../src/utils.c
+ 
+Building target: StageOne
+Invoking: GCC C Linker
+gcc -m32  -o "StageOne"  ./src/StageOne.o ./src/f0700.o ./src/utils.o   
+Finished building target: StageOne
+ 
+18:30:06 **** Incremental Build of configuration Debug for project StageOne ****
+make all 
+make: Nothing to be done for `all'.

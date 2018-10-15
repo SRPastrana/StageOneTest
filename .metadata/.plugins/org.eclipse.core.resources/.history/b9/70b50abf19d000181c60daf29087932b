@@ -1,0 +1,35 @@
+/*
+ ============================================================================
+ Name        : StageOne.c
+ Author      : SergioR
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include "f0700.h"
+#include "utils.h"
+
+// Set this switch to see the performance of the original algorithm
+//
+// #define USE_ORIGINAL
+
+// constant values for array's sizes and values
+#define ARRAY_A2_SIZE 1408
+#define ARRAY_A2_VALUE 4095
+#define ARRAY_A4_SIZE 116
+
+// store data in file to have a baseline
+const char* a2_data = "/home/sergio/Test/a2.bin";
+
+
+
+int main(void)
+{
+	puts("!!!Hello World!!!");
+	return EXIT_SUCCESS;
+}
